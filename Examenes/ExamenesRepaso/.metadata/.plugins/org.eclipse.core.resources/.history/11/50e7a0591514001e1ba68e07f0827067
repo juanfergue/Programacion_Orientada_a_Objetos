@@ -1,0 +1,105 @@
+package covid;
+
+import java.io.File;
+import java.io.PrintWriter;
+import java.io.FileNotFoundException;
+import java.util.SortedMap;
+import java.util.SortedSet;
+import java.util.*;
+
+public class MapaCOVID {
+	private String nombre;
+	private SortedMap<String, SortedSet<DistritoSanitario>> mapa;
+	
+	public MapaCOVID(String n, String fichero) {
+		if(n.length() == 0 || n.isEmpty()) {
+			throw new COVIDException("ERROR introduzca el ombre de la región");
+		}
+		this.nombre = n;
+		mapa = new TreeMap<>();
+		try {
+			leerDatos(fichero);
+		} catch (Exception e) {
+			throw new COVIDException("ERROR en el fichero" + fichero);
+		}
+	}
+	public void leerDatos(String fichero) throws FileNotFoundException {
+		try(Scanner sc = new Scanner(new File(fichero))){
+			leerDatos(sc);
+		}
+	}
+	public void leerDatos(Scanner sc) {
+		while(sc.hasNext()) {
+			String linea = sc.nextLine();
+			try(Scanner sclinea = new Scanner(linea)){
+				sclinea.useDelimiter("[():]+");
+				String DS = sclinea.next();
+				String prov = sclinea.next();
+				int poblacion = Integer.parseInt(sclinea.next());
+				int c14 = Integer.parseInt(sclinea.next());
+				agregarDistrito(prov, new DistritoSanitario(DS, poblacion, c14));
+			}catch (Exception e) {
+				throw new COVIDException("ERROR");
+
+			}
+		}
+	}
+	public void agregarDistrito(String prov, DistritoSanitario ds) {
+		SortedSet<DistritoSanitario> distritos;
+		if(!mapa.containsKey(prov)) {
+			distritos = new TreeSet<>();
+			mapa.put(prov, distritos);
+		}else {
+			distritos = mapa.get(prov);
+		}
+		if( !distritos.contains(ds)) {
+			distritos.add(ds);
+		}
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public Set<String> getProvincias(){
+		return mapa.keySet();
+	}
+	public Set<DistritoSanitario> getDistritos(){
+		SortedSet<DistritoSanitario> distritos = new TreeSet<>();
+		for(SortedSet<DistritoSanitario> distritosProvincia : mapa.values()) {
+			distritos.addAll(distritosProvincia);
+		}
+		return distritos;
+	}
+	public int incidenciaProvincia(String prov) {
+		int res = 0;
+		if(mapa.containsKey(prov)) {
+			int poblacion = 0;
+			int c14 = 0;
+			SortedSet<DistritoSanitario> listads = new TreeSet<>();
+			listads = mapa.get(prov);
+			for(DistritoSanitario ds : listads) {
+				poblacion += ds.getPoblacion();
+				c14 += ds.getCasosCOVID14dias();
+			}
+			res = (c14*100000)/poblacion;
+		}
+		return res;
+	}
+	public void mostrarMapa(String nomFich) throws FileNotFoundException{
+		try(PrintWriter pw = new PrintWriter(nomFich)){
+			mostrarMapa(pw);
+		}
+	}
+	public void mostrarMapa(PrintWriter pw) {
+		pw.println(nombre.toUpperCase() + ": ");
+		for(Map.Entry<String, SortedSet<DistritoSanitario>> entrada : mapa.entrySet()) {
+			pw.println(entrada.getKey());
+			for(DistritoSanitario distritos : entrada.getValue()) {
+				pw.println("\t" + distritos);
+			}
+		}
+	}
+	public Set<String> obtenerInfoCOVID(InfoCOVID info){
+		return info.obtenerInfo(this);
+	}
+
+}

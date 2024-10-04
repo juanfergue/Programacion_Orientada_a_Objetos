@@ -1,0 +1,17 @@
+package covid;
+import java.util.*;
+public class InfoCierrePerimetral implements InfoCOVID{
+	private final static int CASOS_CIERRE = 500;
+	public InfoCierrePerimetral() {
+		
+	}
+	public Set<String> obtenerinfo(MapaCOVID mapa){
+		Set<String> validos = new HashSet<>();
+		for(DistritoSanitario distritos : mapa.getDistritos()) {
+			if(distritos.getCasosCOVID14dias() > CASOS_CIERRE) {
+				validos.add(distritos.getDistrito());
+			}
+		}
+		return validos;
+	}
+}

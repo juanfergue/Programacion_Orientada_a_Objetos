@@ -1,0 +1,12 @@
+package sociedad;
+
+public class SociedadLimitada extends Sociedad{
+	private int positionsLimit;
+	
+	public SociedadLimitada(int numeroDePlazas) {
+		if(numeroDePlazas <= 0) {
+			throw new SociedadException("ERROR el numero de plazas no puede ser negativo");
+		}
+		
+	}
+}

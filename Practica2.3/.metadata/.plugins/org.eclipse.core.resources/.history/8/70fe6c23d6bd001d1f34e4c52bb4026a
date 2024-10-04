@@ -1,0 +1,16 @@
+package libreria;
+
+public class LibroOferta extends Libro{
+	private double porcDescuento;
+	
+	public LibroOferta(String a, String t, double pbas, double pdesc) {
+	super( a, t, pbas);
+	porcDescuento = pdesc;
+	}
+	public double getDescuento() {
+		return porcDescuento;
+	}
+	protected double getBaseImponible() {
+		return (super.getBaseImponible() + super.getBaseImponible() * porcDescuento / 100);
+	}
+}

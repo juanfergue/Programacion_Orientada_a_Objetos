@@ -1,0 +1,10 @@
+package covid;
+
+import java.util.SortedMap;
+
+
+public class MapaCOVID {
+	private String nombre;
+	private SortedMap<String, SortedSet<Distrito>> mapa;
+	
+}

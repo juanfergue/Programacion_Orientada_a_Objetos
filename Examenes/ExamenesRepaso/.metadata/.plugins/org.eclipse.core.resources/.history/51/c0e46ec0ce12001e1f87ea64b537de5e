@@ -1,0 +1,8 @@
+package parrillatv;
+
+import java.util.*;
+
+public class ProgramacionTV {
+	protected Map<String,SortedSet<ProgramaTV>> cadenas ;
+	
+}

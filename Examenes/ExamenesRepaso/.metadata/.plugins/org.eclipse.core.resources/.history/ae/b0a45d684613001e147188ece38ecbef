@@ -1,0 +1,10 @@
+import sociedad.Socio;
+
+public class TestSocio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package libreria;
+import java.util.ArrayList;
+public class Libreria extends Libro {
+	private ArrayList<libro> libs
+}

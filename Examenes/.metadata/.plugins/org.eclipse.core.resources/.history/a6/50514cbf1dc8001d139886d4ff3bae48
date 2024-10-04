@@ -1,0 +1,13 @@
+package universidad;
+
+public class CentroSubvencionado extends Centro{
+	private double umbralNota;
+	
+	public CentroSubvencionado(double umbral) {
+		super();
+		umbralNota = umbral;
+	}
+	public void addEstudiante(String i, int c, int cr, double n, boolean t) {
+		
+	}
+}

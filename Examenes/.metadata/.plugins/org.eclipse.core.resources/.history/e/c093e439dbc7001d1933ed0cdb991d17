@@ -1,0 +1,53 @@
+package universidad;
+
+public class Estudiante {
+	private String id;
+	private int curso;
+	private int creditos;
+	private boolean tp;
+	private double notaMedia;
+	private static final double expediente = 59;
+	private static final double mantenimiento = 5.7;
+	private static final double precioCredito = 22.5;
+	
+	public Estudiante(String i, int c, int cr, double n, boolean t) {
+		id = i;
+		curso = c;
+		creditos = cr;
+		notaMedia = n; 
+		tp = t;
+		if((c < 1) && (c > 4) || ((c == 1) && (cr < 60)) || ((c > 1) && (cr < 48)) || ((t == true ) && (cr < 24)) ){
+			throw new RuntimeException("No se cumplen las condiciones necesarias");
+		}if ((c == 1) && creditos < 60){
+			
+		}
+	}
+	public int getCreditos() {
+		return creditos;
+	}
+	public double getNotaMedia() {
+		return notaMedia;
+	}
+	public String getId() {
+		return id;
+	}
+
+	public int getCurso() {
+		return curso;
+	}
+	
+	protected double getMatricula() {
+		if(getCurso() == 1) {
+			return expediente + mantenimiento + (getCreditos() * precioCredito);
+		}else {
+			return mantenimiento + (getCreditos() * precioCredito);
+		}
+	}
+	public String toString() {
+		return "{" + getId() + "(media: " + getNotaMedia() + "); " + getCurso() +
+				";  curso " + getCreditos() + " créditos; " + getMatricula() + " euros}";
+	}
+	
+	
+	
+}

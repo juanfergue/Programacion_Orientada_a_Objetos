@@ -1,0 +1,9 @@
+package sociedad;
+
+import java.util.*;
+
+public class Socio {
+	private String name;
+	private Set<String> interests;
+	private int ident;
+}

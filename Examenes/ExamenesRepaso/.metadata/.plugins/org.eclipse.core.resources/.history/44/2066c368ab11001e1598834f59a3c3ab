@@ -1,0 +1,24 @@
+
+import nombres.Nombre;
+
+public class PruebaNombre {
+
+	public static void main(String[] args) {
+		Nombre n1 = new Nombre('F' , "Charlotte");
+		Nombre n2 = new Nombre('F' , "Lorena");
+		Nombre n3 = new Nombre('M' , "Alexis");
+		Nombre n4 = new Nombre('M' , "Alexis");
+
+		System.out.println(n1);
+		System.out.println(n2);
+		System.out.println(n3);
+		System.out.println(n4);
+		
+		if(n4.equals(n3)) {
+			System.out.println( "Son iguales");
+		}else {
+			System.out.println("No son iguales");
+		}
+	}
+
+}

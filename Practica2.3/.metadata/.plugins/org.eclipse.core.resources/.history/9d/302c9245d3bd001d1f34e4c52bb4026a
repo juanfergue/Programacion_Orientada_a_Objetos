@@ -1,0 +1,13 @@
+package libreria;
+
+public class LibreriaOferta extends Libreria {
+	private double porcDescuento;
+	private String autoresOferta;
+	
+	public LibreriaOferta(double desc, String u) {
+		lib = new ArrayList<>();
+		porcDescuento = desc;
+		autor = a;
+	}
+
+}

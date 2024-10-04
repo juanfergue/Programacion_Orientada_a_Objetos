@@ -1,0 +1,14 @@
+package datos;
+
+import java.util.List;
+
+public class DatosException {
+	private List<double> datos;
+	private List<String> errores;
+	private double min;
+	private double max;
+	public Datos(String[], double , double) {
+		
+	}
+
+}

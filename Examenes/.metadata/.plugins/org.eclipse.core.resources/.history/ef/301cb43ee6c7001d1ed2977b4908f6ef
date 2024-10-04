@@ -1,0 +1,9 @@
+package universidad;
+import java.util.ArrayList;
+public class Centro {
+	private ArrayList<Estudiante> matriculados;
+	
+	public Centro() {
+		matriculados = new ArrayList<>();
+	}
+}

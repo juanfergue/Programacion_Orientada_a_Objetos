@@ -1,0 +1,11 @@
+package datos2;
+
+public class Datos2 extends RuntimeException{
+	public DatosException(){
+		super();
+	}
+	public DatosException(String m){
+		super(m);
+	}
+
+}

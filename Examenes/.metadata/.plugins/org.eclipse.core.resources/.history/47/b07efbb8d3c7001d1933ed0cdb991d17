@@ -1,0 +1,14 @@
+package universidad;
+
+public class Estudiante {
+	private String is;
+	private int curso;
+	private int creditos;
+	private boolean tp;
+	private double notaMedia;
+	private static final double expediente;
+	private static final double mantenimiento;
+	private static final double precioCredito;
+
+	
+}

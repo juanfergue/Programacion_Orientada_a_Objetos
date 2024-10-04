@@ -1,0 +1,9 @@
+package sociedad;
+
+public class SociedadLimitada {
+	private int positionsLimit;
+	
+	public SociedadLimitada(int numeroDePlazas) {
+		
+	}
+}

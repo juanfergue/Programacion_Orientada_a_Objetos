@@ -1,0 +1,12 @@
+import sociedad.Socio;
+import sociedad.SociedadException;
+import java.util.*;
+public class TestSocio {
+
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<>() 
+		Socio s1 = new Socio("Layton Kor" , , 24);
+		
+	}
+
+}

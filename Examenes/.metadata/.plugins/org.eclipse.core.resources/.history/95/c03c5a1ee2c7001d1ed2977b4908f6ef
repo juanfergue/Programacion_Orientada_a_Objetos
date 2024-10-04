@@ -1,0 +1,11 @@
+package universidad;
+
+public class PruebaEstudiante {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Estudiante e1 = new Estudiante("785-36-6518", 1, 24, 6.6, false);
+		
+	}
+
+}

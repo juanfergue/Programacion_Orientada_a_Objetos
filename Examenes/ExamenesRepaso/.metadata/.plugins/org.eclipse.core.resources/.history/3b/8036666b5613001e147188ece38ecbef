@@ -1,0 +1,42 @@
+package sociedad;
+
+import java.util.*;
+import java.io.File;
+
+public class Sociedad {
+	private Map<String,Set<Socio>> membersInActivities;
+	
+	public Sociedad() {
+		membersInActivities = new HashMap<>();
+	}
+	public void leerDeFichero(String fich) {
+		try(Scanner sc = new Scanner(new File(fich))){
+			leerDeFichero(sc);
+		}catch(Exception e) {
+			throw new SociedadException("ERRO al leer el fichero: " + fich);
+		}
+	}
+	public void leerDeFichero(Scanner sc) {
+		while(sc.hasNext()) {
+			try(Scanner linea = new Scanner(sc.nextLine())){
+				linea.useDelimiter("[%]");
+				String name = linea.next();
+				try(Scanner inter = new Scanner(linea.next())){
+					inter.useDelimiter("[,]");
+					Set<String> interest = new HashSet<>();
+					while(inter.hasNext()) {
+						interest.add(inter.next());
+					}
+				}
+				int ident = Integer.parseInt(linea.next());
+				nuevoSocio(new Socio(name, interest, ident));
+			}catch(Exception e) {
+				throw new SociedadException("ERRO al leer linea");
+			}
+		}
+	}
+	public void nuevoSocio(Socio m) {
+		if()
+	}
+
+}

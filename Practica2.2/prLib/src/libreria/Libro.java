@@ -1,0 +1,41 @@
+package libreria;
+
+public class Libro {
+	private static double porcIVA;
+	private String autor;
+	private String titulo;
+	private  double precioBase;
+	
+	public Libro(String a, String t, double pb) {
+		this.autor = a;
+		this.titulo = t;
+		this.precioBase = pb;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public double getPrecioBase() {
+		return precioBase;
+	}
+	protected double getBaseImponible() {
+		return this.getPrecioBase();
+	}
+	public double getPrecioFinal() {
+		return (getBaseImponible() + getBaseImponible() * porcIVA/100);
+	}
+	public String toString() {
+		return( getAutor() + getTitulo() + getPrecioBase() + porcIVA + getPrecioFinal());
+	}
+	public static double getIVA() {
+		return porcIVA;
+	}
+	public static void setIVA(double p) {
+		porcIVA = p;
+	}
+}

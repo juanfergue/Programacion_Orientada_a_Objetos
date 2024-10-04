@@ -1,0 +1,47 @@
+package ex2305;
+	import java.util.*;
+	import java.io.File;
+import java.io.IOException;
+public class Laboratorios {
+	private int maxLabs;
+	private List<Solicitud> solicitudes;
+	private SortedSet<Solicitud> erroresDeAsignacion;
+	private SortedMap<Integer, SortedMap<Integer, List<Solicitud>>> asignacion;
+	
+	public Laboratorios(int m) {
+		if( m < 1 ) {
+			throw new LabException("Argumentos erróneos");
+		}
+		this.maxLabs = m;
+		solicitudes = new ArrayList<>();
+		this.erroresDeAsignacion = new TreeSet<>();
+		this.asignacion = new TreeMap<>();
+	}
+
+	protected SortedSet<Solicitud> getErroresDeAsignacion() {
+		return erroresDeAsignacion;
+	}
+	protected void addSolicitud(Solicitud s) {
+		if(!solicitudes.contains(s)) {
+			solicitudes.add(s);
+		}
+	}
+	public void addSolicitud(String datos) {
+		try(Scanner sc = new Scanner(datos)){
+			sc.useDelimiter("\\s*[;]\\s*");
+			String asignatura = sc.next();
+			int diaSem = Integer.parseInt(sc.next());
+			int franja = Integer.parseInt(sc.next());
+			
+			addSolicitud(new Solicitud(asignatura, diaSem, franja));
+		}
+	}
+	public void asignarLabs() {
+		
+	}
+	public void cargarSolicitudesDeFichero(String fichero) throws IOException {
+		try(Scanner sc = new Scanner( new File(fichero))){
+			
+		}
+	}
+}

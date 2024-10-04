@@ -1,0 +1,10 @@
+package parrillatv;
+
+public class programaTV {
+	private String nombre;
+	private int duración;
+	
+	public ProgramaTV(String n, Hora h, int d) {
+		
+	}
+}

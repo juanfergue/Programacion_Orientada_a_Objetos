@@ -1,0 +1,70 @@
+package ex2305;
+
+public class Solicitud {
+	private String asignatura;
+	private int diaSem;
+	private int franja;
+	private int lab;
+	
+	public Solicitud(String a, int ds, int f) {
+		if( 1 > ds && ds > 7) {
+			throw new LabException("Argumentos erróneos");
+		}
+		if( 1 > f && f > 3) {
+			throw new LabException("Argumentos erróneos");
+		}
+		this.asignatura = a;
+		this.diaSem = ds;
+		this.franja = f;
+		this.lab = -1;
+	}
+
+	public String getAsignatura() {
+		return asignatura;
+	}
+
+	public int getDiaSem() {
+		return diaSem;
+	}
+
+	public int getFranja() {
+		return franja;
+	}
+
+	public int getLab() {
+		return lab;
+	}
+	public void setDiaSem(int ds) {
+		if( 1 > ds && ds > 7) {
+			throw new LabException("Argumentos erróneos");
+		}
+		this.diaSem = ds;
+	}
+	public void setFranja(int f) {
+		if( 1 > f && f > 3) {
+			throw new LabException("Argumentos erróneos");
+		}
+		this.franja = f;
+	}
+	public void setLab(int lab) {
+		this.lab = lab;
+	}
+	@Override
+	public boolean equals(Object o) {
+		boolean ok = false;
+		if(o instanceof Solicitud) {
+			Solicitud other = (Solicitud) o;
+			ok = this.asignatura.equalsIgnoreCase(other.asignatura) && (this.diaSem == other.diaSem) && (this.franja == other.franja);
+		}
+		return ok;
+	}
+	@Override
+	public int hashCode() {
+		return this.asignatura.hashCode() + Integer.hashCode(diaSem) + Integer.hashCode(franja);
+	}
+	@Override
+	public int compareTo(Solicitud other) {
+		
+	}
+	
+}

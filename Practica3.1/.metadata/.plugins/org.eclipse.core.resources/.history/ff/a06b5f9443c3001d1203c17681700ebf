@@ -1,0 +1,8 @@
+package datos;
+
+public class DatosException {
+	public Datos(String[], double , double) {
+		
+	}
+
+}

@@ -1,0 +1,73 @@
+package elecciones;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Candidatura {
+	private String partido;
+	private String circunstancias;
+	private List<Candidata> candidatura;
+	
+	public Candidatura(String part, String circuns) {
+		this.partido = part;
+		this.circunstancias = circuns;
+		candidatura = new ArrayList<>();
+	}
+	public String getPartido() {
+		return partido;
+	}
+
+	public String getCircunstancias() {
+		return circunstancias;
+	}
+	public void agregarMiembro(Candidata cand) {
+		int i = buscarDNI(cand.getDNI());
+		if(i < 0) {
+			candidatura.add(cand);
+		}else {
+			candidatura.set(i, cand);
+		}
+	}
+	public void eliminarMiembro(Candidata cand) {
+		int i = buscarDNI(cand.getDNI());
+		if( i < 0) {
+			throw new RuntimeException("DNI no encontrado");
+		}else {
+			candidatura.remove(i);
+		}
+	}
+	private int buscarDNI(String dni) {
+		int i = 0;
+		while(i < candidatura.size() && ! candidatura.get(i).getDNI().equalsIgnoreCase(dni)) {
+			i++;
+		}
+		return (i < candidatura.size()) ? i : -1;
+	}
+	public void agregarCabezaLista(Candidata cand) {
+		cabezaLista();
+		candidatura.set(0, cand);
+		
+	}
+	public Candidata cabezaLista() {
+		if(candidatura.size() == 0) {
+			throw new RuntimeException("La cadena esta vacía");
+		}
+		return candidatura.get(0);
+	}
+	public boolean esCremallera() {
+		boolean secumple = true;
+		int i = 1;
+		while(i < candidatura.size() && ! secumple) {
+			if(candidatura.get(i).getSexo() != candidatura.get(i-1).getSexo()) {
+				secumple = true;
+			}else {
+				secumple = false;
+			}
+		}
+		return secumple;
+	}
+	public String toString() {
+		return 	(this.getPartido() + "[" + this.getCircunstancias().toUpperCase() + candidatura.toString() );
+	}
+	
+}

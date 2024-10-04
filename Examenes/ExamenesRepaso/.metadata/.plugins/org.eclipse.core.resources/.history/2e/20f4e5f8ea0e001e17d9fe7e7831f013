@@ -1,0 +1,47 @@
+package nombres;
+
+import java.util.Objects;
+
+public class Nombre {
+	private char genero;
+	private String nombre;
+	
+	public Nombre(char g, String n) {
+		if(n.isEmpty() || n.length() == 0) {
+			throw new RegistroCivilException("ERROR, nombre vacio o no existente");
+		}
+		if( !(g == 'M' || g == 'F')) {
+			throw new RegistroCivilException("ERROR, valores de genero erroneos");
+		}
+		this.genero = g;
+		this.nombre = n;
+	}
+
+	public char getGenero() {
+		return genero;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+	@Override
+	 public boolean equals(Object o) {
+		 boolean ok = false;
+		 if(o instanceof Nombre) {
+			 Nombre other = (Nombre) o;
+			 ok = this.nombre.equalsIgnoreCase(other.nombre) && (this.genero == other.genero);
+		 }
+		 return ok;
+	 }
+	 @Override
+	 public int hashCode() {
+		 return Objects.hashCode(nombre.toUpperCase() + genero);
+	 }
+	 @Override
+	 public int compareTo(Nombre other) {
+		 int res = this.nombre.compareToIgnoreCase(other.nombre);
+		 if (res == 0) {
+			 res = Character.compare(genero, other.genero);
+		 }
+	 }
+}

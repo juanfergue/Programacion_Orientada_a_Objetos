@@ -1,0 +1,17 @@
+package parrillatv;
+
+public class ProgramaTV {
+	private String nombre;
+	private int duración;
+	
+	public ProgramaTV(String n, Hora h, int d) {
+		if(d < 0) {
+			throw new ProgramacionTVException("ERROR, la duración no puede ser negativa");
+		}
+		this.nombre =n;
+		this.duración = d;
+		int hor = 0;
+		int min = 0;
+		h = new Hora(hor, min);
+	}
+}

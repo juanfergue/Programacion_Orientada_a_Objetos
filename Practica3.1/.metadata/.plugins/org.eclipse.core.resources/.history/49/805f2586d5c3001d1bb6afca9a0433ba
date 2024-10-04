@@ -1,0 +1,78 @@
+package datos;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Datos {
+	private List<Double> datos;
+	private List<String> errores;
+	private double min;
+	private double max;
+	
+	public Datos(String[] dat, double min, double max) {
+		this.min = min;
+		this.max = max;
+		datos = new ArrayList<>();
+		errores = new ArrayList<>();
+		for(String d : dat) {
+			try {
+				datos.add(Double.parseDouble(d));
+			}catch(NumberFormatException e) {
+				errores.add(d);
+			}
+		}
+	}
+	public double calcMedia() {
+		int cont = 0;
+		double suma = 0;
+		for(Double i : datos) {
+			if(i>=min && i<=max) {
+				suma+=i;
+				cont++;
+			}
+		}
+		if(cont == 0) {
+			throw new DatosException("No hay datos en el rango especificado");
+		}
+		double media = suma/cont;
+		return media;
+	}
+	public double calcDesvTipica() {
+		double media = calcMedia();
+		double suma = 0;
+		int cont = 0;
+		for(Double i : datos) {
+			if(i>=min && i<=max) {
+				suma+=Math.pow(i - media, 2);
+				cont++;
+			}
+		}
+		double dtipica = Math.sqrt(suma / cont);
+		return dtipica;
+		
+	}
+	public void SetRango(String rango) {
+		try {
+			int idx = rango.indexOf(';');
+			if(idx == -1) {
+				throw new DatosException("Error en los datos al establecer el rango");
+			}
+			this.min = Double.parseDouble(rango.substring(0, idx));
+			this.max = Double.parseDouble(rango.substring(idx + 1));
+		}catch(NumberFormatException e) {
+			throw new DatosException("Error en los datos al establecer el rango");
+		}
+	}
+	public List<Double> getDatos() {
+		return datos;
+	}
+	public List<String> getErrores() {
+		return errores;
+	}
+	@Override
+	public String toString() {
+		return "Min:" + min + ", Max" + max + ",\n [" + datos + "],\n [" + errores + "],\n Media: "
+				+ calcMedia() + ", DesvTipica: " + calcDesvTipica();
+	}
+	
+}

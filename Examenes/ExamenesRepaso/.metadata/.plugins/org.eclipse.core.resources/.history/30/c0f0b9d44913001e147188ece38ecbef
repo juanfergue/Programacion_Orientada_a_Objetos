@@ -1,0 +1,8 @@
+package sociedad;
+
+import java.util.*;
+
+public class Sociedad {
+	private Map<String,Set<Socio>> membersInActivities;
+	
+}

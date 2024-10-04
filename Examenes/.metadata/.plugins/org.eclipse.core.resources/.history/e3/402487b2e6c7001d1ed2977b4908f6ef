@@ -1,0 +1,19 @@
+package universidad;
+import java.util.ArrayList;
+public class Centro {
+	private ArrayList<Estudiante> matriculados;
+	
+	public Centro() {
+		matriculados = new ArrayList<>();
+	}
+	public void addEstudiante() {
+		
+	}
+	protected void addEstudiante(Estudiante e) {
+		int i = 0;
+		while(i < matriculados.size() && ! matriculados.get(i).getId().equals(e)) {
+			i++;
+		}
+		return (i < matriculados.size()) ? i : -1;
+	}
+}

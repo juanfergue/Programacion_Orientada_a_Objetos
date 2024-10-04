@@ -1,0 +1,11 @@
+package universidad;
+
+public class PruebaCentro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Centro c1 = new Centro();
+		System.out.println(c1.toString());
+	}
+
+}

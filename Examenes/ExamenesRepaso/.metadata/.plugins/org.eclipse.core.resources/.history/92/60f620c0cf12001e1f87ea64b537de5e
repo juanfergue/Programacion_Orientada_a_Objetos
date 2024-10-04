@@ -1,0 +1,28 @@
+package parrillatv;
+
+import java.util.*;
+import java.io.File;
+public class ProgramacionTV {
+	protected Map<String,SortedSet<ProgramaTV>> cadenas ;
+	
+	public ProgramacionTV() {
+		cadenas = new HashMap<>();
+	}
+	public void agregar(String cadenaTV, ProgramaTV prog) {
+		SortedSet<ProgramaTV> programas;
+		if(!cadenas.containsKey(cadenaTV)) {
+			programas = new TreeSet<>();
+			cadenas.put(cadenaTV, programas);
+		}else {
+			programas = cadenas.get(cadenaTV);
+		}
+		programas.add(prog);
+	}
+	public void leerProgramas(String fichero) {
+		try(Scanner sc = new Scanner(new File(fichero))){
+			
+		}catch(Exception e) {
+			throw new ProgramacionTVException("ERROR al leer el fichero " + fichero);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package libreria;
+
+public class Libro {
+	private static double porcIVA;
+	private String autor;
+	private String titulo;
+	private double precioBase;
+	
+	public 
+}

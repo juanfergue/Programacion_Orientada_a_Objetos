@@ -1,0 +1,12 @@
+import sociedad.Socio;
+import sociedad.SociedadException;
+
+public class TestSocio {
+
+	public static void main(String[] args) {
+		
+		Socio s1 = new Socio("Layton Kor" , [senderismo, escalada], 24);
+		
+	}
+
+}

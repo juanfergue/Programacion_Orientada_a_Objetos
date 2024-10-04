@@ -1,0 +1,9 @@
+package nombres;
+
+import java.util.*;
+
+public class RegistroCivil {
+	private String estado;
+	private SortedMap<Nombre, SortedMap<Integer,Integer>> registro;
+	
+}

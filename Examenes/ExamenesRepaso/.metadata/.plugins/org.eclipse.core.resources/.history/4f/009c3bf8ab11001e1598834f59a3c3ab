@@ -1,0 +1,15 @@
+package nombres;
+
+public class FiltroLongitud implements Filtro{
+	private int longitud;
+	public FiltroLongitud(int l) {
+		this.longitud = l;
+	}
+	public boolean criterio(Nombre n) {
+		boolean ok = false;
+		if(n.getNombre().length() == this.longitud) {
+			ok = true;
+		}
+		return ok;
+	}
+}

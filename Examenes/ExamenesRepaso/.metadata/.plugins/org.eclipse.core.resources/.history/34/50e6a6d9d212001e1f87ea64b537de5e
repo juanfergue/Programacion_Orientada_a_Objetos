@@ -1,0 +1,63 @@
+package parrillatv;
+
+import java.util.*;
+import java.io.File;
+import java.io.PrintWriter;
+
+public class ProgramacionTV {
+	protected Map<String,SortedSet<ProgramaTV>> cadenas ;
+	
+	public ProgramacionTV() {
+		cadenas = new HashMap<>();
+	}
+	public void agregar(String cadenaTV, ProgramaTV prog) {
+		SortedSet<ProgramaTV> programas;
+		if(!cadenas.containsKey(cadenaTV)) {
+			programas = new TreeSet<>();
+			cadenas.put(cadenaTV, programas);
+		}else {
+			programas = cadenas.get(cadenaTV);
+		}
+		programas.add(prog);
+	}
+	public void leerProgramas(String fichero) {
+		try(Scanner sc = new Scanner(new File(fichero))){
+			leerProgramas(sc);
+		}catch(Exception e) {
+			throw new ProgramacionTVException("ERROR al leer el fichero " + fichero);
+		}
+	}
+	private void leerProgramas(Scanner sc) {
+		while(sc.hasNext()) {
+			try(Scanner linea = new Scanner(sc.nextLine())){
+				linea.useDelimiter("[>@:-]+");
+				String cadena = linea.next();
+				String prog = linea.next();
+				int hh = Integer.parseInt(linea.next());
+				int mm = Integer.parseInt(linea.next());
+				int duracion = Integer.parseInt(linea.next());
+				ProgramaTV programatv = new ProgramaTV(prog, new Hora(hh,mm), duracion);
+				agregar(cadena, programatv);
+			}catch(Exception e) {
+				throw new ProgramacionTVException("ERROR al leer linea de fichero");
+			}
+		}
+	}
+	public void mostrarProgramas(String fichero) {
+		try(PrintWriter pw = new PrintWriter(fichero)){
+			mostrarProgramas(pw);
+		}catch(Exception e) {
+			throw new ProgramacionTVException("ERROR al guardar en fichero");
+		}
+	}
+	public void mostrarProgramas(PrintWriter pw) {
+		for(Map.Entry<String, SortedSet<ProgramaTV>> cadena : cadenas.entrySet()) {
+			pw.println(cadena.getKey().toUpperCase() + ":");
+			for(ProgramaTV prog : cadena.getValue()) {
+				pw.println("\n" + prog);
+			}
+		}
+	}
+
+	
+}

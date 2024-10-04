@@ -1,0 +1,18 @@
+package covid;
+import java.util.*;
+public class InfoPoblacion implements InfoCOVID{
+	private int minPoblacion;
+	private int maxPoblacion;
+	
+	public InfoPoblacion(int min, int max) {
+		if(min < 0 || max < 0) {
+			throw new COVIDException("ERROR rango negativo no válido");
+		}
+		this.maxPoblacion = max;
+		this.minPoblacion = min;
+	}
+	public Set<String> obtenerInfo(MapaCOVID mapa){
+		Set<String> validos = new HashSet<>();
+		
+	}
+}

@@ -1,0 +1,10 @@
+package universidad;
+
+public class CentroSubvencionado {
+	private double umbralNota;
+	
+	public CentroSubvencionado(double umbral) {
+		super();
+		umbralNota = umbral;
+	}
+}

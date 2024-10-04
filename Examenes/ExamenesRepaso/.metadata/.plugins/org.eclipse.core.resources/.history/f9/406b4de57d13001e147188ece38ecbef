@@ -1,0 +1,30 @@
+package ex2305;
+	import java.util.*;
+public class Laboratorios {
+	private int maxLabs;
+	private List<Solicitud> solicitudes;
+	private SortedSet<Solicitud> erroresDeAsignacion;
+	private SortedMap<Integer, SortedMap<Integer, List<Solicitud>>> asignacion;
+	
+	public Laboratorios(int m) {
+		if( m < 1 ) {
+			throw new LabException("Argumentos erróneos");
+		}
+		this.maxLabs = m;
+		solicitudes = new ArrayList<>();
+		this.erroresDeAsignacion = new TreeSet<>();
+		this.asignacion = new TreeMap<>();
+	}
+
+	protected SortedSet<Solicitud> getErroresDeAsignacion() {
+		return erroresDeAsignacion;
+	}
+	protected void addSolicitud(Solicitud s) {
+		if(!solicitudes.contains(s)) {
+			solicitudes.add(s);
+		}
+	}
+	public void addSolicitud(String datos) {
+		
+	}
+}

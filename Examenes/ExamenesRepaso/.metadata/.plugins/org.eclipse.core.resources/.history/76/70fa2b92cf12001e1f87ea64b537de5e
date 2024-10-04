@@ -1,0 +1,21 @@
+package parrillatv;
+
+import java.util.*;
+
+public class ProgramacionTV {
+	protected Map<String,SortedSet<ProgramaTV>> cadenas ;
+	
+	public ProgramacionTV() {
+		cadenas = new HashMap<>();
+	}
+	public void agregar(String cadenaTV, ProgramaTV prog) {
+		SortedSet<ProgramaTV> programas;
+		if(!cadenas.containsKey(cadenaTV)) {
+			programas = new TreeSet<>();
+			cadenas.put(cadenaTV, programas);
+		}else {
+			programas = cadenas.get(cadenaTV);
+		}
+		programas.add(prog);
+	}
+}

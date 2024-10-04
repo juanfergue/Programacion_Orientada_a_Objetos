@@ -1,0 +1,12 @@
+package libreria;
+
+public class LibreriaOferta extends Libro{
+	private double porcDescuento;
+	private String autoresOferta;
+	
+	public LibreriaOferta(double desc, String a) {
+		super(a, t, desc);
+		porcDescuento = desc;
+	}
+
+}

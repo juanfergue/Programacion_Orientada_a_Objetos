@@ -1,0 +1,10 @@
+package universidad;
+
+public class EstudianteConBeca extends Estudiante{
+	private double umbrealNota;
+	
+	public EstudianteConBeca( double umbral) {
+		super();
+		
+	}
+}

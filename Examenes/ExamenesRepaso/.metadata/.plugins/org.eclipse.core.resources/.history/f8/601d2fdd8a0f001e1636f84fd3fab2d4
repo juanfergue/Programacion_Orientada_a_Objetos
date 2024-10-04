@@ -1,0 +1,9 @@
+import nombres.Nombre;
+
+public class PruebaNombres {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

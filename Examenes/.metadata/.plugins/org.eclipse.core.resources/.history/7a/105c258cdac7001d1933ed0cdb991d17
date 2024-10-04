@@ -1,0 +1,18 @@
+package universidad;
+
+public class EstudianteConBeca extends Estudiante{
+	private double umbralNota;
+	
+	public EstudianteConBeca(String i, int c, int cr, double n , boolean t, double umbral) {
+		super(i, c, cr, n, t);
+		umbralNota = umbral;
+	}
+	protected double getMatricula() {
+		return super.getMatricula();
+	}
+	private double subvencion() {
+		double const = 0;
+		const = (10/umbralNota)/3;
+	}
+	
+}

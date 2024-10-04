@@ -1,0 +1,9 @@
+import ex2305.Solicitud;
+
+public class PruebaSolicitud {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package covid;
+
+public class DistritoSanitario {
+	private String distrito;
+	private int poblacion;
+	private int casosCOVID14dias;
+	
+	public DistritoSanitario(String d, int p, int c14) {
+		if(p <= 0) {
+			throw new COVIDException("ERROR valor de poblacion no es válido");
+		}
+		if(c14 < 0) {
+			throw new COVIDException("ERROR valor de casos COVID no es válido");
+		}
+		this.distrito = d;
+		this.poblacion = p;
+		this.casosCOVID14dias = c14;
+	}
+}

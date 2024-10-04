@@ -1,0 +1,20 @@
+package sociedad;
+
+import java.util.*;
+import java.io.File;
+
+public class Sociedad {
+	private Map<String,Set<Socio>> membersInActivities;
+	
+	public Sociedad() {
+		membersInActivities = new HashMap<>();
+	}
+	public void leerDeFichero(String fich) {
+		try(Scanner sc = new Scanner(new File(fich))){
+			
+		}catch(Exception e) {
+			throw new SociedadException("ERRO al leer el fichero: " + fich);
+		}
+	}
+
+}

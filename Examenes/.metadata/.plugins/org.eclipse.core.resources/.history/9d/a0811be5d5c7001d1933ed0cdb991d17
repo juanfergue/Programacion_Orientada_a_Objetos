@@ -1,0 +1,22 @@
+package universidad;
+
+public class Estudiante {
+	private String id;
+	private int curso;
+	private int creditos;
+	private boolean tp;
+	private double notaMedia;
+	private static final double expediente = 59;
+	private static final double mantenimiento = 5.7;
+	private static final double precioCredito = 22.5;
+	
+	public Estudiante(String i, int c, int cr, double n, boolean t) {
+		id = i;
+		curso = c;
+		creditos = cr;
+		notaMedia = n; 
+		tp = t;
+	}
+
+	
+}

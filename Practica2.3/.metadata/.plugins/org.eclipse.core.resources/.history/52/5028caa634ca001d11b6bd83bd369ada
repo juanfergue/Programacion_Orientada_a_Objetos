@@ -1,0 +1,29 @@
+package libreria;
+import java.util.ArrayList;
+public class Libreria {
+	private ArrayList<Libro> libs;
+	
+	public Libreria() {
+		libs = new ArrayList<>();
+	}
+	public void addLibro(String a, String t, double pb){
+		
+	}
+	public void remLibro(String a, String t) {
+		
+	}
+	public double getPrecioFinal(String a, String t) {
+		
+	}
+	protected void anyadirLibro(Libro lib1){
+		
+	}
+	private int buscarLibro(String a, String t) {
+		int i = 0;
+		while(i < libs.size() && ! libs.get(i).getAutor().equalsIgnoreCase(a) && 
+				! libs.get(i).getTitulo().equalsIgnoreCase(t)) {
+			i++;
+		}
+		return (i < libs.size()) ? i : -1;
+	}
+}

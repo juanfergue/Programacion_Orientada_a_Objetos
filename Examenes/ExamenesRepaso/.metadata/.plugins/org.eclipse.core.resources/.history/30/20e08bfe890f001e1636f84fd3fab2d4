@@ -1,0 +1,6 @@
+package nombres;
+import Nombre.java;
+
+public class PruebaNombre {
+
+}

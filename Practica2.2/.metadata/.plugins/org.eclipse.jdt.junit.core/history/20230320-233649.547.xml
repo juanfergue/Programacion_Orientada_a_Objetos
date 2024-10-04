@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="JUnitTestLibreria" project="prLib" tests="11" started="11" failures="2" errors="9" ignored="0">
+  <testsuite name="TestRunnerPr22$JUnitTestLibreria" time="0.01">
+    <testcase name="libreriaRemLibroTest1" classname="TestRunnerPr22.JUnitTestLibreria" time="0.001">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaRemLibroTest1(TestRunnerPr22.java:215)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaRemLibroTest2" classname="TestRunnerPr22.JUnitTestLibreria" time="0.0">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaRemLibroTest2(TestRunnerPr22.java:253)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaRemLibroTest3" classname="TestRunnerPr22.JUnitTestLibreria" time="0.0">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaRemLibroTest3(TestRunnerPr22.java:290)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaGetPrecioFinalTest1" classname="TestRunnerPr22.JUnitTestLibreria" time="0.0">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaGetPrecioFinalTest1(TestRunnerPr22.java:157)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaGetPrecioFinalTest2" classname="TestRunnerPr22.JUnitTestLibreria" time="0.0">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaGetPrecioFinalTest2(TestRunnerPr22.java:175)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaGetPrecioFinalTest3" classname="TestRunnerPr22.JUnitTestLibreria" time="0.001">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaGetPrecioFinalTest3(TestRunnerPr22.java:193)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaToStringTest1" classname="TestRunnerPr22.JUnitTestLibreria" time="0.0">
+      <failure>
+        <expected>[ ]</expected>
+        <actual>[ [ ] ]</actual>
+        org.junit.ComparisonFailure: 
+&gt; Error: lr1.toString(): expected:&lt;[ []]&gt; but was:&lt;[ [[ ] ]]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaToStringTest1(TestRunnerPr22.java:312)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="libreriaToStringTest2" classname="TestRunnerPr22.JUnitTestLibreria" time="0.002">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaToStringTest2(TestRunnerPr22.java:318)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaCtorTest1" classname="TestRunnerPr22.JUnitTestLibreria" time="0.001">
+      <failure>
+        <expected>[ ]</expected>
+        <actual>[ [ ] ]</actual>
+        org.junit.ComparisonFailure: 
+&gt; Error: new Libreria(): toString(): expected:&lt;[ []]&gt; but was:&lt;[ [[ ] ]]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaCtorTest1(TestRunnerPr22.java:116)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="libreriaAddLibroTest1" classname="TestRunnerPr22.JUnitTestLibreria" time="0.002">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaAddLibroTest1(TestRunnerPr22.java:123)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="libreriaAddLibroTest2" classname="TestRunnerPr22.JUnitTestLibreria" time="0.001">
+      <error>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)&#13;
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)&#13;
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)&#13;
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)&#13;
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)&#13;
+	at libreria.Libreria.buscarLibro(Libreria.java:44)&#13;
+	at libreria.Libreria.anyadirLibro(Libreria.java:32)&#13;
+	at libreria.Libreria.addLibro(Libreria.java:11)&#13;
+	at TestRunnerPr22$JUnitTestLibreria.libreriaAddLibroTest2(TestRunnerPr22.java:135)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)&#13;
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)&#13;
+	at java.base/java.lang.Thread.run(Thread.java:833)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,37 @@
+package nombres;
+
+import java.text.Format;
+import java.util.*;
+
+public class RegistroCivil {
+	private String estado;
+	private SortedMap<Nombre, SortedMap<Integer,Integer>> registro;
+	
+	public RegistroCivil(String cod, String nom) {
+		if(cod.length() == 0 || cod.isEmpty()) {
+			throw new RegistroCivilException("ERROR, codigo de estado vacio");
+		}
+		estado = cod;
+		registro = new TreeMap<>();
+	}
+	private void leerFichero(String fichero) {
+		try (Scanner sc = new Scanner(Format.Field(fichero))){
+			while(sc.hasNext()) {
+				String linea = sc.next();
+				procesar(linea);
+			}
+		}catch(Exception e) {
+			
+		}
+	}
+	private void procesar(String linea) {
+		try(Scanner scLinea = new Scanner(linea)){
+			scLinea.useDelimiter("[;]");
+			String estado = scLinea.next();
+			char genero = scLinea.next().toCharArray();
+			
+		}catch(Exception e) {
+			
+		}
+	}
+}

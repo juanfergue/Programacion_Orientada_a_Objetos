@@ -1,0 +1,13 @@
+package elecciones;
+
+public class CandidaturaPartido extends Candidatura{
+	
+	public CandidaturaPartido(String part, String circ) {
+		
+	}
+	public void agregarMiembro(Candidata cand) {
+		
+	}
+	public 
+
+}

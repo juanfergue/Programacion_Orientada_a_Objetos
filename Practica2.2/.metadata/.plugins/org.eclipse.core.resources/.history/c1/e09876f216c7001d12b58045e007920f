@@ -1,0 +1,12 @@
+package libreria;
+import java.util.ArrayList;
+public class Libreria {
+	private ArrayList<Libro> libs;
+	
+	public Libreria(){
+		libs = new ArrayList<>();
+	}
+	public void addLibro(String a, String b, double pb) {
+		
+	}
+}

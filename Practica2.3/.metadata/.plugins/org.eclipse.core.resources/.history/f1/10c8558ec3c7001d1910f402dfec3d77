@@ -1,0 +1,11 @@
+package libreria;
+import java.util.ArrayList;
+public class LibreriaOferta extends Libreria{
+	private double porcDescuento;
+	private String[] autoresOferta;
+	
+	public LibreriaOferta(double pd, String[] aofer ) {
+		LibreriaOferta = new Arraylist<>();
+		
+	}
+}

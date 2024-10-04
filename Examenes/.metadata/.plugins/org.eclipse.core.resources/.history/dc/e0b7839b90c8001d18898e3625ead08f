@@ -1,0 +1,48 @@
+package elecciones;
+
+public class Candidata {
+	private String nombre;
+	private String DNI;
+	private String partido;
+	private Sexo sexo;
+	
+	public Candidata(String n, String d, Sexo s, String p) {
+		nombre = n;
+		DNI = d;
+		sexo = s;
+		partido = p;
+	}
+	public Candidata(String n, String d, Sexo s) {
+		nombre = n;
+		DNI = n;
+		sexo = s;
+		partido = null;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getPartido() {
+		return partido;
+	}
+	
+	public String getDNI() {
+		return DNI;
+	}
+	public Sexo getSexo() {
+		return sexo;
+	}
+	boolean esIndependiente() {
+		return true;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void cambiarSexo() {
+		this.sexo = sexo;
+	}
+	public void setPartido(String partido) {
+		this.partido = partido;
+	}
+	
+}

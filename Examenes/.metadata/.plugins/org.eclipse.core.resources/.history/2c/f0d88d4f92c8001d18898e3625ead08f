@@ -1,0 +1,26 @@
+package elecciones;
+
+import java.util.List;
+
+public class Candidatura {
+	private String partido;
+	private String circunstancias;
+	private List<Candidata> candidatura;
+	
+	public Candidatura(String part, String circuns) {
+		this.partido = part;
+		this.circunstancias = circuns;
+		candidatura = new ArrayList<>();
+	}
+	public String getPartido() {
+		return partido;
+	}
+
+	public String getCircunstancias() {
+		return circunstancias;
+	}
+	public void agregarMiembro(Candidata cand) {
+		
+	}
+	public void eliminarMiembro()
+}

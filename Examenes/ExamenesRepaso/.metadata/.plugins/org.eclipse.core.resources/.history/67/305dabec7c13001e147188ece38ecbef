@@ -1,0 +1,9 @@
+package ex2305;
+	import java.util.*;
+public class Laboratorios {
+	private int maxLabs;
+	private List<Solicitud> solicitudes;
+	private SortedSet<Solicitud> erroresDeAsignacion;
+	private SortedMap<Integer, SortedMap<Integer, List<Solicitud>>> asignacion;
+	
+}

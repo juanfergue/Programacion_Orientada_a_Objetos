@@ -1,0 +1,29 @@
+package libreria;
+
+public class LibreriaOferta extends Libreria{
+	private double porcDescuento;
+	private String[] autoresOferta;
+	
+	public LibreriaOferta(double d, String[] autores) {
+		super();
+		porcDescuento = d;
+		autoresOferta = autores;
+	}
+	public void setOferta(double desc, String[] autorOfer) {
+		porcDescuento = desc;
+		autoresOferta = autorOfer;
+	}
+	public String[] getOferta() {
+		return autoresOferta;
+	}
+	public double getDescuento() {
+		return porcDescuento;
+	}
+	public void addLibro() {
+		
+	}
+	public String toString() {
+		return porcDescuento + "%"+ ;
+	}
+
+}

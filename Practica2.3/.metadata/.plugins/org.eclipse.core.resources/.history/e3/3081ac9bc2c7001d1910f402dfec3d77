@@ -1,0 +1,6 @@
+package libreria;
+
+public class LibreriaOferta extends Libreria{
+	private double porcDescuento;
+	private String[] autoresOferta;
+}
